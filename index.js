@@ -1,7 +1,7 @@
 const express = require('express');
 const axios = require('axios');
 const app = express();
-const PORT = process.env.PORT || 8081;
+
 
 app.get('/', async (req, res) => {
   const username = req.query.username || 'uvacoder';
@@ -24,6 +24,4 @@ app.get('/', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`server started on port ${PORT}`);
-});
+
